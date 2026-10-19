@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.I.MX - Soluciones Integrales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandOrange: '#F4600C',
+            brandDark: '#2A2E33',
+            brandBlack: '#1A1D20',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="bg-brandDark text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <!-- Reemplazar src con la ruta del logo -->
+        <img src="logo_simx.png" alt="S.I.MX Soluciones Integrales" class="h-12 w-auto">
+      </div>
+      <div class="hidden md:flex space-x-8 font-semibold uppercase text-sm tracking-wider">
+        <a href="#servicios" class="hover:text-brandOrange transition">Servicios</a>
+        <a href="#nosotros" class="hover:text-brandOrange transition">Proyectos</a>
+        <a href="#contacto" class="hover:text-brandOrange transition">Contacto</a>
+      </div>
+      <a href="https://wa.me/5218100000000?text=Hola,%20me%20interesa%20una%20cotizacion%20de%20Servicios%20Integrales" target="_blank" class="bg-brandOrange hover:bg-orange-600 text-white font-bold py-2 px-5 rounded text-sm uppercase tracking-wider flex items-center shadow-lg transition">
+        <i class="fab font-bold fa-whatsapp mr-2 text-lg"></i> Cotizar
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-brandBlack text-white py-20 px-4 sm:px-6 lg:px-8 border-b-4 border-brandOrange">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-brandOrange font-bold tracking-widest uppercase text-sm mb-2 block">Obra Civil • Mantenimiento • Soluciones Industriales</span>
+      <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight mb-6">
+        Construcción y Servicios Especializados
+      </h1>
+      <p class="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto mb-8">
+        Respuestas rápidas, trabajo técnico garantizado y ejecución profesional para tu empresa, negocio o residencia en la Zona Metropolitana.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://wa.me/5218100000000?text=Hola,%20busco%20cotizar%20un%20proyecto" target="_blank" class="bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-8 rounded shadow-lg text-lg uppercase tracking-wider flex items-center justify-center">
+          <i class="fab fa-whatsapp mr-2 text-xl"></i> Cotización Express
+        </a>
+        <a href="#servicios" class="border-2 border-gray-400 hover:border-white text-white font-bold py-4 px-8 rounded text-lg uppercase tracking-wider flex items-center justify-center transition">
+          Ver Servicios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark uppercase">Nuestros Servicios Integrales</h2>
+      <div class="w-24 h-1 bg-brandOrange mx-auto mt-2"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Tarjeta 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-brandOrange">
+        <div class="p-6">
+          <div class="w-12 h-12 bg-orange-100 text-brandOrange rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brandDark mb-2">Obra Civil & Prefabricados</h3>
+          <p class="text-gray-600 text-sm">Fabricación de contrapesos, estructuras de concreto reforzado, cimentaciones y soluciones hechas a la medida.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-brandOrange">
+        <div class="p-6">
+          <div class="w-12 h-12 bg-orange-100 text-brandOrange rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brandDark mb-2">Herrería & Carpintería</h3>
+          <p class="text-gray-600 text-sm">Cimbras, estructuras metálicas, soldadura especializada y trabajos en madera industrial/residencial.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-brandOrange">
+        <div class="p-6">
+          <div class="w-12 h-12 bg-orange-100 text-brandOrange rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brandDark mb-2">Mantenimiento General</h3>
+          <p class="text-gray-600 text-sm">Plomería, instalaciones eléctricas, pintura, impermeabilización y atención preventiva/correctiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contacto" class="bg-brandDark text-white py-12">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">¿Tienes un proyecto en mente?</h2>
+      <p class="text-gray-300 mb-6">Mándanos un mensaje con los detalles o fotos de lo que necesitas y te cotizamos de inmediato.</p>
+      <a href="https://wa.me/5218100000000?text=Hola,%20me%20gustaria%20recibir%20informacion" target="_blank" class="inline-block bg-brandOrange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded shadow-lg text-lg uppercase tracking-wider">
+        Hablar con un asesor
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandBlack text-gray-500 py-6 text-center text-sm border-t border-gray-800">
+    <p>&copy; S.I.MX - Soluciones Integrales. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
